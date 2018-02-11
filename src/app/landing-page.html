@@ -1,0 +1,46 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse  bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" 
+  aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" >Navbar</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	<ul class="navbar-nav mr-auto">
+	  <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+		<a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+	  </li>
+	  <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+		<a class="nav-link"  [routerLink]="['/signUp']">SignUp</a>
+	  </li>
+	  
+	  <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+		<a class="nav-link"  [routerLink]="['/signIn']">SignIn</a>
+	  </li>
+	  
+	  <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+		<a class="nav-link" [routerLink]="['/students']">Students</a>
+	  </li>
+	  
+	  <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+		<a class="nav-link" [routerLink]="['/employees']">Employees</a>
+	  </li>
+	  
+	</ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<!-- <div> -->
+	<!-- <h1>{{pageHeading}}</h1> -->
+<!-- </div> -->
+<!-- <ul> -->
+	<!-- <li *ngFor="let country of countriesList"> -->
+	<!-- {{country.name}} -->
+	<!-- </li> -->
+<!-- </ul> -->
+<!-- <p>Parent</p> -->
+
+<!-- <country-list [title]="pageHeading" [cityList] = "citiesList" (passChildData) = "abc($event)"></country-list> -->
+
+

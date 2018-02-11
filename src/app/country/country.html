@@ -1,0 +1,26 @@
+
+<table class="table table-bordered">
+	<tr>
+		<th>Code</th>
+		<th>Name</th>
+	<tr>
+	<tr *ngFor="let country of countryList">
+		<td>{{country.code}}</td>
+		<td>{{country.name}}</td>
+	<tr>
+</table>
+
+
+<table class="table table-bordered">
+	<tr>
+		<th>City Code</th>
+		<th>Name</th>
+	<tr>
+	<tr *ngFor="let city of cityList">
+		<td>{{city.code}}</td>
+		<td>{{city.cityName}}</td>
+	<tr>
+</table>
+
+<button (click) = onButtonClick()>Click
+</button >
